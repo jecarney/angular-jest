@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "jest",
+    "test": "rimraf output/coverage && jest --coverage --coverageDirectory=output/coverage",
     "test-esm": "node --experimental-vm-modules node_modules/jest/bin/jest.js -c=jest-esm.config.js"
   },
   "private": true,
